@@ -48,28 +48,30 @@ ZetCode
 
 * ***Actions:***
 
-	sudo systemctl start mongod
+	`sudo systemctl start mongod`
 
-	sudo systemctl status mongod
+	`sudo systemctl status mongod`
 
 - Creating a database 
 
-	mongo testdb
+	`mongo testdb`
 
 - Fill in cars collection in testdb:
 
-	db.cars.insert({name: "Audi", price: 52642})
-	db.cars.insert({name: "Mercedes", price: 57127})
-	db.cars.insert({name: "Skoda", price: 9000})
-	db.cars.insert({name: "Volvo", price: 29000})
-	db.cars.insert({name: "Bentley", price: 350000})
-	db.cars.insert({name: "Citroen", price: 21000})
-	db.cars.insert({name: "Hummer", price: 41400})
-	db.cars.insert({name: "Volkswagen", price: 21600})
+```
+db.cars.insert({name: "Audi", price: 52642})
+db.cars.insert({name: "Mercedes", price: 57127})
+db.cars.insert({name: "Skoda", price: 9000})
+db.cars.insert({name: "Volvo", price: 29000})
+db.cars.insert({name: "Bentley", price: 350000})
+db.cars.insert({name: "Citroen", price: 21000})
+db.cars.insert({name: "Hummer", price: 41400})
+db.cars.insert({name: "Volkswagen", price: 21600})
+```	
 
 - Installing PHP driver
 
-	composer require mongodb/mongodb
+	`composer require mongodb/mongodb`
 
 _When installing the driver, you need to know the location of the `php.ini` file to enable the necessary extensions in it. You can view the paths to the location of files using the `phpinfo()` function. For example, call by specifying in `public/indeх.php` in an empty project folder OR in the `index()` method of the currently used controller:_
 
@@ -168,6 +170,8 @@ MongoDB\Driver\Exception\Exception
 
 ![screenshot of sample]( https://github.com/mslobodyanyuk/mongodb_zetcode/blob/master/public/images/5.png )
 
+        ...
+
 - Limiting data output
 
 Used classes in `read_limit.php`:
@@ -193,7 +197,7 @@ MongoDB\Driver\Exception\Exception
 
 ![screenshot of sample]( https://github.com/mslobodyanyuk/mongodb_zetcode/blob/master/public/images/7.png )
 
-#### useful links:
+####useful links:
 
 ZetCode
 			
