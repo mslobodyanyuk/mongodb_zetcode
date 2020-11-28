@@ -197,7 +197,7 @@ MongoDB\Driver\Exception\Exception
 
 ![screenshot of sample]( https://github.com/mslobodyanyuk/mongodb_zetcode/blob/master/public/images/7.png )
 
-####useful links:
+#### useful links:
 
 ZetCode
 			
